@@ -4,7 +4,7 @@ import userController from '../controller/user.controller.js'
 
 const router = Router()
 
-// router.post('/login', userController.LOGIN)
+router.post('/login', userController.LOGIN)
 router.post('/register', userController.REGISTER);
 // router.get('/users', userController.GET);
 router.get('/users/:token', userController.GET);
