@@ -5,6 +5,6 @@ import messageController from '../controller/post.controller.js';
 const router = Router();
 
 
-router.get('/posts', messageController.GET);
+router.get('/post', messageController.GET);
 
 export default router;
