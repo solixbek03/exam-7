@@ -4,7 +4,7 @@ import fileUpload from 'express-fileupload';
 import { Server } from 'socket.io';
 import path from 'path';
 import userRouter from './router/user.router.js';
-// import messageRouter from './routers/message.router.js';
+import messageRouter from './router/post.router.js';
 
 
 
@@ -14,7 +14,7 @@ app.use(express.json());
 app.use(fileUpload());
 
 app.use( userRouter );
-// app.use( messageRouter );
+app.use( messageRouter );
 
 app.use( express.static(path.resolve('uploads')));
 

@@ -10,10 +10,10 @@
     "postText":"dwadawdwadawdawdad ............",
     "types": "online",
     "postImage": "rasm.png",
-    "postActive": true
+    "active": true
   },
   {
-    "postId": 1,
+    "postId": 2,
     "postTitle": "it",
     "created_at_date": "2020/10/10",
     "created_at_hour": "10:10",
@@ -23,10 +23,10 @@
     "postText":"dwadawdwadawdawdad ............",
     "types": "online",
     "postImage": "rasm.png",
-    "postActive": true
+    "active": false
   },
   {
-    "postId": 1,
+    "postId": 3,
     "postTitle": "it",
     "created_at_date": "2020/10/10",
     "created_at_hour": "10:10",
@@ -36,6 +36,6 @@
     "postText":"dwadawdwadawdawdad ............",
     "types": "online",
     "postImage": "rasm.png",
-    "postActive": true
+    "active": false
   }
 ]
