@@ -1,41 +1,41 @@
 [
-  {
-    "postId": 1,
-    "postTitle": "it",
-    "created_at_date": "2020/10/10",
-    "created_at_hour": "10:10",
-    "direction": "it",
-    "internalDirection": "Java developer",
-    "postLink": "https://www.youtube.com/liver24",
-    "postText":"dwadawdwadawdawdad ............",
-    "types": "online",
-    "postImage": "rasm.png",
-    "active": true
-  },
-  {
-    "postId": 2,
-    "postTitle": "it",
-    "created_at_date": "2020/10/10",
-    "created_at_hour": "10:10",
-    "direction": "it",
-    "internalDirection": "Java developer",
-    "postLink": "https://www.youtube.com/liver24",
-    "postText":"dwadawdwadawdawdad ............",
-    "types": "online",
-    "postImage": "rasm.png",
-    "active": false
-  },
-  {
-    "postId": 3,
-    "postTitle": "it",
-    "created_at_date": "2020/10/10",
-    "created_at_hour": "10:10",
-    "direction": "it",
-    "internalDirection": "Java developer",
-    "postLink": "https://www.youtube.com/liver24",
-    "postText":"dwadawdwadawdawdad ............",
-    "types": "online",
-    "postImage": "rasm.png",
-    "active": false
-  }
+    {
+        "postId": 1,
+        "title": "hayr",
+        "date": "2020/12/31",
+        "dateHour": "10:10",
+        "direction": "miditsina",
+        "internalDirection": "shifokor",
+        "postLink": "http://localhost:3000/post",
+        "postText": "awd",
+        "types": "offline",
+        "active": false,
+        "image": "1672669627821images.jpeg"
+    },
+    {
+        "postId": 2,
+        "title": "hayr",
+        "date": "2020/12/31",
+        "dateHour": "10:20",
+        "direction": "miditsina",
+        "internalDirection": "shifokor",
+        "postLink": "http://localhost:3000/post",
+        "postText": "awd",
+        "types": "offline",
+        "active": false,
+        "image": "1672669628365images.jpeg"
+    },
+    {
+        "postId": 3,
+        "title": "hayr",
+        "date": "2020/12/31",
+        "dateHour": "10:10",
+        "direction": "miditsina",
+        "internalDirection": "shifokor",
+        "postLink": "http://localhost:3000/post",
+        "postText": "awd",
+        "types": "offline",
+        "active": false,
+        "image": "1672669629047images.jpeg"
+    }
 ]
