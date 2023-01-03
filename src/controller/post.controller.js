@@ -85,28 +85,29 @@ const PUT = (req, res) => {
     let { id } = req.params;
     let { active, title, date, dateHour, direction, internalDirection, postLink, postText, types,} = req.body;
 
-    console.log(posts);
-    if (!(active|| title|| date, dateHour|| direction|| internalDirection|| postLink|| postText|| types)){
-      throw new Error('please enter the information');
-    }
-    let post = posts.find(post => post.postId == id);
 
-    if (!post){
-      throw new Error("not found post")
+    if ((active|| title|| date|| dateHour|| direction|| internalDirection|| postLink|| postText|| types)){
+      let post = posts.find(post => post.postId == id);
+  
+      if (!post){
+        throw new Error("not found post")
+      } else {
+        post.active = active || post.active
+        post.title = title || post.title 
+        post.date = date || post.date  
+        post.dateHour = dateHour || post.dateHour
+        post.direction = direction || post.direction
+        post.internalDirection = internalDirection || post.internalDirection
+        post.postLink = postLink || post.postLink
+        post.postText = postText || post.postText
+        post.types = types || post.types
+  
+        write('post', posts)
+        return res.status(200).json({ status: 200, message: "post updated", data: post })
+  
+      }
     } else {
-      post.active = active || post.active
-      post.title = title || post.title 
-      post.date = date || post.date  
-      post.dateHour = dateHour || post.dateHour
-      post.direction = direction || post.direction
-      post.internalDirection = internalDirection || post.internalDirection
-      post.postLink = postLink || post.postLink
-      post.postText = postText || post.postText
-      post.types = types || post.types
-
-      write('post', posts)
-      return res.status(200).json({ status: 200, message: "post updated", data: post })
-
+      throw new Error('please enter the information');
     }
   } catch (error) {
     return res.status(404).json({ status: 404, message: error.message})

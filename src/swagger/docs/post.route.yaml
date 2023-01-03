@@ -1,0 +1,73 @@
+/post:
+  get:
+    tags:
+      - post
+    responses:
+      '200':  
+        description: all post
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/VideoResponse'
+  post:
+    tags:
+      - post
+    requestBody:
+      description: post post
+      content:
+        multipart/form-data:
+          schema:
+            $ref: '#/components/schemas/PostPost'
+      required: true   
+    responses:
+      '201':  
+        description: all posts
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/PostResponse'
+
+/post/{postId}:
+  put:
+    tags:
+      - post
+    parameters:
+      - name: postId
+        in: path
+        description: post update 
+        required: true
+    requestBody:
+      description: put post
+      content:
+        multipart/form-data:
+          schema:
+            $ref: '#/components/schemas/PutPost'
+      required: true      
+    responses:
+      '200':  
+        description: post update
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/PutPostResponse'
+    security:
+        - Bearer:
+            type: oauth2
+  delete:
+    tags:
+      - post
+    parameters:
+      - name: postId
+        in: path
+        description: post delete
+        required: true
+    responses:
+      '200':  
+        description: post delete
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/PostResponse'
+    security:
+        - Bearer:
+            type: oauth2                                                                   

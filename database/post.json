@@ -1,22 +1,22 @@
 [
     {
         "postId": 1,
-        "title": "hayr",
+        "title": "as",
         "date": "22/02/2022",
-        "dateHour": "10:10",
+        "dateHour": "20:02",
         "direction": "miditsina",
         "internalDirection": "shifokor",
         "postLink": "http://localhost:3000/post",
         "postText": "awd",
         "types": "offline",
-        "active": false,
+        "active": "true",
         "image": "1672669627821images.jpeg"
     },
     {
         "postId": 2,
         "title": "hayr",
         "date": "22/02/2022",
-        "dateHour": "10:20",
+        "dateHour": "10:50",
         "direction": "oymakorlik",
         "internalDirection": "shifokor",
         "postLink": "http://localhost:3000/post",
@@ -37,5 +37,31 @@
         "types": "offline",
         "active": true,
         "image": "1672669629047images.jpeg"
+    },
+    {
+        "postId": 4,
+        "title": "hayr",
+        "date": "2020/12/31",
+        "dateHour": "10:10",
+        "direction": "miditsina",
+        "internalDirection": "shifokor",
+        "postLink": "http://localhost:3000/post",
+        "postText": "awd",
+        "types": "offline",
+        "active": false,
+        "image": "1672733575028images.jpeg"
+    },
+    {
+        "postId": 5,
+        "title": "asd",
+        "date": "123",
+        "dateHour": "123",
+        "direction": "asdf",
+        "internalDirection": "qwe",
+        "postLink": "qwedf",
+        "postText": "qwerf",
+        "types": "qwefrg",
+        "active": false,
+        "image": "1672733691393channels4_profile.jpg"
     }
 ]

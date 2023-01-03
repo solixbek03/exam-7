@@ -3,8 +3,12 @@ import { createServer } from 'http';
 import fileUpload from 'express-fileupload';
 import { Server } from 'socket.io';
 import path from 'path';
+
 import userRouter from './router/user.router.js';
 import messageRouter from './router/post.router.js';
+import swaggerRouter from './swagger.js';
+
+
 
 
 
@@ -20,8 +24,8 @@ app.use( express.static(path.resolve('uploads')));
 
 
 
-const httpServer = createServer(app);
-const io = new Server(httpServer);
+
+app.use('/api-docs', swaggerRouter )
 
 
-httpServer.listen(3000, () => console.log('server ready at *3000'))
+app.listen(3000, () => console.log(`server ready at *3000`))
