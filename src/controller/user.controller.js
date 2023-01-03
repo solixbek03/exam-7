@@ -86,8 +86,24 @@ const GET = (req, res) => {
   }
 };
 
+const GET_USERS = (req, res) => {
+  try {
+    const users = read('users').filter((user) => delete user.password);
+
+
+      return res.status(200).json({
+        status: 200,
+        message: 'ok',
+        data: users
+    })
+  } catch (error) {
+    res.status(400).json({ status: 400, message: error.message });
+  }
+};
+
 export default {
 GET,
+GET_USERS,
 REGISTER,
 LOGIN
 }

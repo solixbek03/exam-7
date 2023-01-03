@@ -5,9 +5,9 @@ import checkToken from '../middlewares/checkToken.js';
 const router = Router();
 
 
-router.get('/post', messageController.GET);
+router.get('/post', messageController.GET_QUERY);
 router.post('/post', messageController.POST);
-router.delete('/post/:id', messageController.DELETE);
+router.delete('/post/:id', checkToken, messageController.DELETE);
 router.put('/post/:id', checkToken, messageController.PUT);
 
 

@@ -1,11 +1,18 @@
 import { read, write } from '../utils/model.js';
 import path from 'path'
 
-const GET = (req, res) => {
+const GET_QUERY = (req, res) => {
   try {
     const post = read('post');
     let {active} = req.query
-    let filterUsers = post.filter(user => user.active.toString() == active)
+    let filterUsers = post.filter(user =>  {
+      let byActive = active? user.active.toString() == active : true
+      
+
+
+
+      return byActive
+    })
 
     if (filterUsers) {
       return res.status(200).json({status: 200, message: "ok", data:filterUsers})
@@ -14,6 +21,8 @@ const GET = (req, res) => {
     res.status(400).json({ status: 400, message: error.message });
   }
 };
+
+
 
 const POST = (req, res) => {
   try {
@@ -108,7 +117,7 @@ const PUT = (req, res) => {
 }
 
 export default {
-  GET,
+  GET_QUERY,
   POST,
   DELETE,
   PUT

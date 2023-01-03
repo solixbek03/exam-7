@@ -6,7 +6,7 @@ const router = Router()
 
 router.post('/login', userController.LOGIN)
 router.post('/register', userController.REGISTER);
-// router.get('/users', userController.GET);
+router.get('/users', userController.GET_USERS);
 router.get('/users/:token', userController.GET);
 
 
