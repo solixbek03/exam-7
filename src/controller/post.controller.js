@@ -24,7 +24,6 @@ const GET = (req, res) => {
     res.status(400).json({ status: 400, message: error.message });
   }
 };
-
 const POST = (req, res) => {
   try {
     let posts = read("post");
@@ -63,7 +62,6 @@ const POST = (req, res) => {
     res.status(400).json({ status: 400, message: error.message });
   }
 };
-
 const DELETE = (req, res) => {
   try {
     const post = read('post');
@@ -81,7 +79,6 @@ const DELETE = (req, res) => {
     return res.status(404).json({status: 404, message: 'post not found'})
   }
 };
-
 const PUT = (req, res) => {
   try {
     let posts = read('post')
