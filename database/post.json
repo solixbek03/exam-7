@@ -2,7 +2,7 @@
     {
         "postId": 1,
         "title": "hayr",
-        "date": "2020/12/31",
+        "date": "22/02/2022",
         "dateHour": "10:10",
         "direction": "miditsina",
         "internalDirection": "shifokor",
@@ -15,27 +15,27 @@
     {
         "postId": 2,
         "title": "hayr",
-        "date": "2020/12/31",
+        "date": "22/02/2022",
         "dateHour": "10:20",
-        "direction": "miditsina",
+        "direction": "oymakorlik",
         "internalDirection": "shifokor",
         "postLink": "http://localhost:3000/post",
         "postText": "awd",
-        "types": "offline",
+        "types": "online",
         "active": false,
         "image": "1672669628365images.jpeg"
     },
     {
         "postId": 3,
         "title": "hayr",
-        "date": "2020/12/31",
+        "date": "22/02/2022",
         "dateHour": "10:10",
-        "direction": "miditsina",
+        "direction": "oymakorlik",
         "internalDirection": "shifokor",
         "postLink": "http://localhost:3000/post",
         "postText": "awd",
         "types": "offline",
-        "active": false,
+        "active": true,
         "image": "1672669629047images.jpeg"
     }
 ]

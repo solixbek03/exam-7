@@ -4,23 +4,28 @@ import path from 'path'
 const GET_QUERY = (req, res) => {
   try {
     const post = read('post');
-    let {active} = req.query
-    let filterUsers = post.filter(user =>  {
-      let byActive = active? user.active.toString() == active : true
-      
+    let {active, date, direction, types, title} = req.query
+    let filterUsers = post.filter(post =>  {
+      let byActive = active ? post.active.toString() == active : true
+      let byDate = date ? post.date == date.replace(/\s/g, '') : true
+      let byDirection = direction ? post.direction == direction.replace(/\s/g, '') : true
+      let byTypes = types ? post.types == types.replace(/\s/g, '') : true
+      let byTitle = title ? post.title == title.replace(/\s/g, '') : true
 
 
-
-      return byActive
+      return byActive && byDate && byDirection && byTypes && byTitle
     })
 
     if (filterUsers) {
       return res.status(200).json({status: 200, message: "ok", data:filterUsers})
     }
+    return res.status(200).json({status: 200, message: "ok", data:post})
   } catch (error) {
     res.status(400).json({ status: 400, message: error.message });
   }
 };
+
+
 
 
 
