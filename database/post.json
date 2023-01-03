@@ -37,18 +37,5 @@
         "types": "offline",
         "active": false,
         "image": "1672733575028images.jpeg"
-    },
-    {
-        "postId": 5,
-        "title": "asd",
-        "date": "123",
-        "dateHour": "123",
-        "direction": "asdf",
-        "internalDirection": "qwe",
-        "postLink": "qwedf",
-        "postText": "qwerf",
-        "types": "qwefrg",
-        "active": false,
-        "image": "1672733691393channels4_profile.jpg"
     }
 ]
