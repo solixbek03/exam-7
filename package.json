@@ -16,6 +16,8 @@
     "express-fileupload": "^1.4.0",
     "jsonwebtoken": "^9.0.0",
     "socket.io": "^4.5.4",
-    "socket.io-client": "^4.5.4"
+    "socket.io-client": "^4.5.4",
+    "swagger-jsdoc": "^6.2.7",
+    "swagger-ui-express": "^4.6.0"
   }
 }
