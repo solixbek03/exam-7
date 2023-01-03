@@ -1,18 +1,5 @@
 [
     {
-        "postId": 1,
-        "title": "as",
-        "date": "22/02/2022",
-        "dateHour": "20:02",
-        "direction": "miditsina",
-        "internalDirection": "shifokor",
-        "postLink": "http://localhost:3000/post",
-        "postText": "awd",
-        "types": "offline",
-        "active": "true",
-        "image": "1672669627821images.jpeg"
-    },
-    {
         "postId": 2,
         "title": "hayr",
         "date": "22/02/2022",

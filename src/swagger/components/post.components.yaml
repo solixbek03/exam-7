@@ -98,3 +98,29 @@ components:
         image: 
           type: string
           format: binary
+    DeletePostResponse:
+      type: object  
+      properties:
+        postId:
+          type: integer
+        title: 
+          type: string
+        date: 
+          type: integer
+        dateHour: 
+          type: integer
+        direction: 
+          type: string
+        internalDirection: 
+          type: string
+        postLink: 
+          type: string
+        postText: 
+          type: string
+        types: 
+          type: string
+        active:
+          type: boolean
+        image: 
+          type: string
+          format: binary
