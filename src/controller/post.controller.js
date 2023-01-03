@@ -1,7 +1,7 @@
 import { read, write } from '../utils/model.js';
 import path from 'path'
 
-const GET_QUERY = (req, res) => {
+const GET = (req, res) => {
   try {
     const post = read('post');
     let {active, date, direction, types, title} = req.query
@@ -24,10 +24,6 @@ const GET_QUERY = (req, res) => {
     res.status(400).json({ status: 400, message: error.message });
   }
 };
-
-
-
-
 
 const POST = (req, res) => {
   try {
@@ -122,7 +118,7 @@ const PUT = (req, res) => {
 }
 
 export default {
-  GET_QUERY,
+  GET,
   POST,
   DELETE,
   PUT
